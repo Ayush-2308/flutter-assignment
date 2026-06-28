@@ -11,7 +11,7 @@ A fully responsive **Flutter Web** office management dashboard built as part of 
 
 ## 🌐 Live Demo
 
-🔗 **[View Live Dashboard](https://spectacular-rugelach-1c20b9.netlify.app/)**
+🔗 **[View Live Dashboard](https://singular-faun-e2cd68.netlify.app/)**
 
 ---
 
