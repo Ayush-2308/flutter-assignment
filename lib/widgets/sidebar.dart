@@ -19,19 +19,30 @@ class Sidebar extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    width: 38,
-                    height: 38,
+                    width: 44,
+                    height: 44,
                     decoration: BoxDecoration(
-                      color: AppColors.primary,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: AppColors.border),
                     ),
-                    alignment: Alignment.center,
-                    child: const Text(
-                      'AS',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                      ),
+                    clipBehavior: Clip.antiAlias,
+                    child: Image.asset(
+                      'assets/images/adstacks_logo.jpg',
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          color: AppColors.primary,
+                          alignment: Alignment.center,
+                          child: const Text(
+                            'AS',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        );
+                      },
                     ),
                   ),
                   const SizedBox(width: 10),
